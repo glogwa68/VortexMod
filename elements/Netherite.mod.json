@@ -4,10 +4,10 @@
   "definition": {
     "name": "Netherite",
     "groundBlock": {
-      "value": "Blocks.ANCIENT_DEBRIS"
+      "value": "Blocks.DIRT#2"
     },
     "undergroundBlock": {
-      "value": "Blocks.QUARTZ_BLOCK#0"
+      "value": "Blocks.ANCIENT_DEBRIS"
     },
     "biomeCategory": "NONE",
     "parent": {
@@ -17,7 +17,7 @@
     "temperature": 0.5,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
-    "biomeType": "ICY",
+    "biomeType": "WARM",
     "spawnBiome": true,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [],
