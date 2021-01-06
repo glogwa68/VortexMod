@@ -214,35 +214,61 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "def"
+    },
+    {
+      "name": "StatcmdCommandExecuted",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "statcmd_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Statcmd",
+      "type": "command",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "statcmd"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.minecraft.splash_potion.effect.force": "Splash Sharp",
       "item.minecraft.lingering_potion.effect.force": "Lingering Sharp",
+      "item.vortexmod.armorstat_chestplate": "Armorstat Body green",
       "item.minecraft.tipped_arrow.effect.def": "Arrow of Sharp",
       "item.vortexmod.armorstat_boots": "Armorstat Boots green",
+      "item.vortexmod.armorstat_leggings": "Armorstat Leggings green",
       "advancements.crafted_horse_armor.descr": "you have Crafted Horse Armor !! :D",
       "item.minecraft.tipped_arrow.effect.hp": "Arrow of Hp",
       "item.minecraft.potion.effect.force": "Sharp",
       "item.minecraft.tipped_arrow.effect.force": "Arrow of Sharp",
-      "advancements.crafted_horse_armor.title": "Crafted Horse Armor",
-      "effect.def": "Sharp",
-      "item.minecraft.splash_potion.effect.hp": "Splash Hp",
-      "item.minecraft.splash_potion.effect.def": "Splash Sharp",
-      "item.minecraft.splash_potion.effect.force": "Splash Sharp",
-      "item.vortexmod.armorstat_chestplate": "Armorstat Body green",
-      "item.vortexmod.armorstat_leggings": "Armorstat Leggings green",
       "biome.vortexmod.netherite": "Netherite",
       "effect.hp": "Hp",
       "block.vortexmod.anciant_debrit": "Anciant Debrit",
       "item.minecraft.lingering_potion.effect.def": "Lingering Sharp",
+      "advancements.crafted_horse_armor.title": "Crafted Horse Armor",
       "item.minecraft.potion.effect.hp": "Hp",
       "item.minecraft.lingering_potion.effect.hp": "Lingering Hp",
+      "effect.def": "Sharp",
+      "item.minecraft.splash_potion.effect.hp": "Splash Hp",
       "item.vortexmod.armorstat_helmet": "Armorstat Helmet green",
       "effect.force": "Sharp",
-      "item.minecraft.potion.effect.def": "Sharp"
+      "item.minecraft.potion.effect.def": "Sharp",
+      "item.minecraft.splash_potion.effect.def": "Splash Sharp"
     }
   },
   "workspaceSettings": {
