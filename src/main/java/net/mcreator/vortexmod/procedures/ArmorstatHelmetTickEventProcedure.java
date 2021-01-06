@@ -26,204 +26,100 @@ public class ArmorstatHelmetTickEventProcedure extends VortexmodModElements.ModE
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if (((new Object() {
-			public int getScore(String score) {
-				if (entity instanceof PlayerEntity) {
-					Scoreboard _sc = ((PlayerEntity) entity).getWorldScoreboard();
-					ScoreObjective _so = _sc.getObjective(score);
-					if (_so != null) {
-						Score _scr = _sc.getOrCreateScore(((PlayerEntity) entity).getScoreboardName(), _so);
-						return _scr.getScorePoints();
-					}
+		{
+			Entity _ent = entity;
+			if (_ent instanceof PlayerEntity) {
+				Scoreboard _sc = ((PlayerEntity) _ent).getWorldScoreboard();
+				ScoreObjective _so = _sc.getObjective("hp");
+				if (_so == null) {
+					_so = _sc.addObjective("hp", ScoreCriteria.DUMMY, new StringTextComponent("hp"), ScoreCriteria.RenderType.INTEGER);
 				}
-				return 0;
-			}
-		}.getScore("hp")) == (new Object() {
-			public int getScore(String score) {
-				if (entity instanceof PlayerEntity) {
-					Scoreboard _sc = ((PlayerEntity) entity).getWorldScoreboard();
-					ScoreObjective _so = _sc.getObjective(score);
-					if (_so != null) {
-						Score _scr = _sc.getOrCreateScore(((PlayerEntity) entity).getScoreboardName(), _so);
-						return _scr.getScorePoints();
-					}
-				}
-				return 0;
-			}
-		}.getScore("hp")))) {
-			{
-				Entity _ent = entity;
-				if (_ent instanceof PlayerEntity) {
-					Scoreboard _sc = ((PlayerEntity) _ent).getWorldScoreboard();
-					ScoreObjective _so = _sc.getObjective("hp");
-					if (_so == null) {
-						_so = _sc.addObjective("hp", ScoreCriteria.DUMMY, new StringTextComponent("hp"), ScoreCriteria.RenderType.INTEGER);
-					}
-					Score _scr = _sc.getOrCreateScore(((PlayerEntity) _ent).getScoreboardName(), _so);
-					_scr.setScorePoints((int) ((new Object() {
-						public int getScore(String score) {
-							if (entity instanceof PlayerEntity) {
-								Scoreboard _sc = ((PlayerEntity) entity).getWorldScoreboard();
-								ScoreObjective _so = _sc.getObjective(score);
-								if (_so != null) {
-									Score _scr = _sc.getOrCreateScore(((PlayerEntity) entity).getScoreboardName(), _so);
-									return _scr.getScorePoints();
-								}
+				Score _scr = _sc.getOrCreateScore(((PlayerEntity) _ent).getScoreboardName(), _so);
+				_scr.setScorePoints((int) ((new Object() {
+					public int getScore(String score) {
+						if (entity instanceof PlayerEntity) {
+							Scoreboard _sc = ((PlayerEntity) entity).getWorldScoreboard();
+							ScoreObjective _so = _sc.getObjective(score);
+							if (_so != null) {
+								Score _scr = _sc.getOrCreateScore(((PlayerEntity) entity).getScoreboardName(), _so);
+								return _scr.getScorePoints();
 							}
-							return 0;
 						}
-					}.getScore("hp")) + 10));
-				}
+						return 0;
+					}
+				}.getScore("hp")) + 10));
 			}
 		}
-		if (((new Object() {
-			public int getScore(String score) {
-				if (entity instanceof PlayerEntity) {
-					Scoreboard _sc = ((PlayerEntity) entity).getWorldScoreboard();
-					ScoreObjective _so = _sc.getObjective(score);
-					if (_so != null) {
-						Score _scr = _sc.getOrCreateScore(((PlayerEntity) entity).getScoreboardName(), _so);
-						return _scr.getScorePoints();
-					}
+		{
+			Entity _ent = entity;
+			if (_ent instanceof PlayerEntity) {
+				Scoreboard _sc = ((PlayerEntity) _ent).getWorldScoreboard();
+				ScoreObjective _so = _sc.getObjective("def");
+				if (_so == null) {
+					_so = _sc.addObjective("def", ScoreCriteria.DUMMY, new StringTextComponent("def"), ScoreCriteria.RenderType.INTEGER);
 				}
-				return 0;
-			}
-		}.getScore("def")) == (new Object() {
-			public int getScore(String score) {
-				if (entity instanceof PlayerEntity) {
-					Scoreboard _sc = ((PlayerEntity) entity).getWorldScoreboard();
-					ScoreObjective _so = _sc.getObjective(score);
-					if (_so != null) {
-						Score _scr = _sc.getOrCreateScore(((PlayerEntity) entity).getScoreboardName(), _so);
-						return _scr.getScorePoints();
-					}
-				}
-				return 0;
-			}
-		}.getScore("def")))) {
-			{
-				Entity _ent = entity;
-				if (_ent instanceof PlayerEntity) {
-					Scoreboard _sc = ((PlayerEntity) _ent).getWorldScoreboard();
-					ScoreObjective _so = _sc.getObjective("def");
-					if (_so == null) {
-						_so = _sc.addObjective("def", ScoreCriteria.DUMMY, new StringTextComponent("def"), ScoreCriteria.RenderType.INTEGER);
-					}
-					Score _scr = _sc.getOrCreateScore(((PlayerEntity) _ent).getScoreboardName(), _so);
-					_scr.setScorePoints((int) ((new Object() {
-						public int getScore(String score) {
-							if (entity instanceof PlayerEntity) {
-								Scoreboard _sc = ((PlayerEntity) entity).getWorldScoreboard();
-								ScoreObjective _so = _sc.getObjective(score);
-								if (_so != null) {
-									Score _scr = _sc.getOrCreateScore(((PlayerEntity) entity).getScoreboardName(), _so);
-									return _scr.getScorePoints();
-								}
+				Score _scr = _sc.getOrCreateScore(((PlayerEntity) _ent).getScoreboardName(), _so);
+				_scr.setScorePoints((int) ((new Object() {
+					public int getScore(String score) {
+						if (entity instanceof PlayerEntity) {
+							Scoreboard _sc = ((PlayerEntity) entity).getWorldScoreboard();
+							ScoreObjective _so = _sc.getObjective(score);
+							if (_so != null) {
+								Score _scr = _sc.getOrCreateScore(((PlayerEntity) entity).getScoreboardName(), _so);
+								return _scr.getScorePoints();
 							}
-							return 0;
 						}
-					}.getScore("def")) + 10));
-				}
+						return 0;
+					}
+				}.getScore("def")) + 10));
 			}
 		}
-		if (((new Object() {
-			public int getScore(String score) {
-				if (entity instanceof PlayerEntity) {
-					Scoreboard _sc = ((PlayerEntity) entity).getWorldScoreboard();
-					ScoreObjective _so = _sc.getObjective(score);
-					if (_so != null) {
-						Score _scr = _sc.getOrCreateScore(((PlayerEntity) entity).getScoreboardName(), _so);
-						return _scr.getScorePoints();
-					}
+		{
+			Entity _ent = entity;
+			if (_ent instanceof PlayerEntity) {
+				Scoreboard _sc = ((PlayerEntity) _ent).getWorldScoreboard();
+				ScoreObjective _so = _sc.getObjective("mp");
+				if (_so == null) {
+					_so = _sc.addObjective("mp", ScoreCriteria.DUMMY, new StringTextComponent("mp"), ScoreCriteria.RenderType.INTEGER);
 				}
-				return 0;
-			}
-		}.getScore("mp")) == (new Object() {
-			public int getScore(String score) {
-				if (entity instanceof PlayerEntity) {
-					Scoreboard _sc = ((PlayerEntity) entity).getWorldScoreboard();
-					ScoreObjective _so = _sc.getObjective(score);
-					if (_so != null) {
-						Score _scr = _sc.getOrCreateScore(((PlayerEntity) entity).getScoreboardName(), _so);
-						return _scr.getScorePoints();
-					}
-				}
-				return 0;
-			}
-		}.getScore("mp")))) {
-			{
-				Entity _ent = entity;
-				if (_ent instanceof PlayerEntity) {
-					Scoreboard _sc = ((PlayerEntity) _ent).getWorldScoreboard();
-					ScoreObjective _so = _sc.getObjective("mp");
-					if (_so == null) {
-						_so = _sc.addObjective("mp", ScoreCriteria.DUMMY, new StringTextComponent("mp"), ScoreCriteria.RenderType.INTEGER);
-					}
-					Score _scr = _sc.getOrCreateScore(((PlayerEntity) _ent).getScoreboardName(), _so);
-					_scr.setScorePoints((int) ((new Object() {
-						public int getScore(String score) {
-							if (entity instanceof PlayerEntity) {
-								Scoreboard _sc = ((PlayerEntity) entity).getWorldScoreboard();
-								ScoreObjective _so = _sc.getObjective(score);
-								if (_so != null) {
-									Score _scr = _sc.getOrCreateScore(((PlayerEntity) entity).getScoreboardName(), _so);
-									return _scr.getScorePoints();
-								}
+				Score _scr = _sc.getOrCreateScore(((PlayerEntity) _ent).getScoreboardName(), _so);
+				_scr.setScorePoints((int) ((new Object() {
+					public int getScore(String score) {
+						if (entity instanceof PlayerEntity) {
+							Scoreboard _sc = ((PlayerEntity) entity).getWorldScoreboard();
+							ScoreObjective _so = _sc.getObjective(score);
+							if (_so != null) {
+								Score _scr = _sc.getOrCreateScore(((PlayerEntity) entity).getScoreboardName(), _so);
+								return _scr.getScorePoints();
 							}
-							return 0;
 						}
-					}.getScore("mp")) + 10));
-				}
+						return 0;
+					}
+				}.getScore("mp")) + 10));
 			}
 		}
-		if (((new Object() {
-			public int getScore(String score) {
-				if (entity instanceof PlayerEntity) {
-					Scoreboard _sc = ((PlayerEntity) entity).getWorldScoreboard();
-					ScoreObjective _so = _sc.getObjective(score);
-					if (_so != null) {
-						Score _scr = _sc.getOrCreateScore(((PlayerEntity) entity).getScoreboardName(), _so);
-						return _scr.getScorePoints();
-					}
+		{
+			Entity _ent = entity;
+			if (_ent instanceof PlayerEntity) {
+				Scoreboard _sc = ((PlayerEntity) _ent).getWorldScoreboard();
+				ScoreObjective _so = _sc.getObjective("str");
+				if (_so == null) {
+					_so = _sc.addObjective("str", ScoreCriteria.DUMMY, new StringTextComponent("str"), ScoreCriteria.RenderType.INTEGER);
 				}
-				return 0;
-			}
-		}.getScore("str")) == (new Object() {
-			public int getScore(String score) {
-				if (entity instanceof PlayerEntity) {
-					Scoreboard _sc = ((PlayerEntity) entity).getWorldScoreboard();
-					ScoreObjective _so = _sc.getObjective(score);
-					if (_so != null) {
-						Score _scr = _sc.getOrCreateScore(((PlayerEntity) entity).getScoreboardName(), _so);
-						return _scr.getScorePoints();
-					}
-				}
-				return 0;
-			}
-		}.getScore("str")))) {
-			{
-				Entity _ent = entity;
-				if (_ent instanceof PlayerEntity) {
-					Scoreboard _sc = ((PlayerEntity) _ent).getWorldScoreboard();
-					ScoreObjective _so = _sc.getObjective("str");
-					if (_so == null) {
-						_so = _sc.addObjective("str", ScoreCriteria.DUMMY, new StringTextComponent("str"), ScoreCriteria.RenderType.INTEGER);
-					}
-					Score _scr = _sc.getOrCreateScore(((PlayerEntity) _ent).getScoreboardName(), _so);
-					_scr.setScorePoints((int) ((new Object() {
-						public int getScore(String score) {
-							if (entity instanceof PlayerEntity) {
-								Scoreboard _sc = ((PlayerEntity) entity).getWorldScoreboard();
-								ScoreObjective _so = _sc.getObjective(score);
-								if (_so != null) {
-									Score _scr = _sc.getOrCreateScore(((PlayerEntity) entity).getScoreboardName(), _so);
-									return _scr.getScorePoints();
-								}
+				Score _scr = _sc.getOrCreateScore(((PlayerEntity) _ent).getScoreboardName(), _so);
+				_scr.setScorePoints((int) ((new Object() {
+					public int getScore(String score) {
+						if (entity instanceof PlayerEntity) {
+							Scoreboard _sc = ((PlayerEntity) entity).getWorldScoreboard();
+							ScoreObjective _so = _sc.getObjective(score);
+							if (_so != null) {
+								Score _scr = _sc.getOrCreateScore(((PlayerEntity) entity).getScoreboardName(), _so);
+								return _scr.getScorePoints();
 							}
-							return 0;
 						}
-					}.getScore("str")) + 10));
-				}
+						return 0;
+					}
+				}.getScore("str")) + 10));
 			}
 		}
 	}

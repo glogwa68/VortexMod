@@ -240,6 +240,23 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "statcmd"
+    },
+    {
+      "name": "Detect",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "detect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
