@@ -26,12 +26,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "horsecraft"
+    },
+    {
+      "name": "CraftedHorseArmor",
+      "type": "achievement",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crafted_horse_armor"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "advancements.crafted_horse_armor.title": "Crafted Horse Armor",
+      "advancements.crafted_horse_armor.descr": "you have Crafted Horse Armor !! :D"
+    }
   },
   "workspaceSettings": {
     "modid": "vortexmod",
