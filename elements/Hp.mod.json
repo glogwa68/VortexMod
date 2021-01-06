@@ -1,0 +1,22 @@
+{
+  "_fv": 15,
+  "_type": "potion",
+  "definition": {
+    "name": "Hp",
+    "effectName": "Hp",
+    "icon": "hp.png",
+    "color": {
+      "value": -65536,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "registerPotionType": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "HpOnPotionActiveTick"
+    }
+  }
+}

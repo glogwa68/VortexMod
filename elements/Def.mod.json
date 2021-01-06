@@ -1,0 +1,22 @@
+{
+  "_fv": 15,
+  "_type": "potion",
+  "definition": {
+    "name": "Sharp",
+    "effectName": "Sharp",
+    "icon": "strength.png",
+    "color": {
+      "value": -52225,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "registerPotionType": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "Str"
+    }
+  }
+}

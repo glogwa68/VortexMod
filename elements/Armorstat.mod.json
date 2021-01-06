@@ -1,0 +1,70 @@
+{
+  "_fv": 15,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "cactus_helm",
+    "enableBody": true,
+    "textureBody": "cactus_chest",
+    "enableLeggings": true,
+    "textureLeggings": "cactus_legs",
+    "enableBoots": true,
+    "textureBoots": "cactus_boots",
+    "onHelmetTick": {
+      "name": "ArmorstatHelmetTickEvent"
+    },
+    "onBodyTick": {
+      "name": "Bodygreen"
+    },
+    "onLeggingsTick": {
+      "name": "Leggreen"
+    },
+    "onBootsTick": {
+      "name": "Bootgreen"
+    },
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "cactus_armor_layer0_",
+    "helmetName": "Armorstat Helmet green",
+    "bodyName": "Armorstat Body green",
+    "leggingsName": "Armorstat Leggings green",
+    "bootsName": "Armorstat Boots green",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 25,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "block.cloth.break"
+    },
+    "repairItems": [
+      {
+        "value": "Blocks.CACTUS"
+      }
+    ]
+  }
+}
