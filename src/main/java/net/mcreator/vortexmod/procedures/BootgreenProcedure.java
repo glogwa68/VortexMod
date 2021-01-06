@@ -105,9 +105,9 @@ public class BootgreenProcedure extends VortexmodModElements.ModElement {
 				Entity _ent = entity;
 				if (_ent instanceof PlayerEntity) {
 					Scoreboard _sc = ((PlayerEntity) _ent).getWorldScoreboard();
-					ScoreObjective _so = _sc.getObjective("hp");
+					ScoreObjective _so = _sc.getObjective("def");
 					if (_so == null) {
-						_so = _sc.addObjective("hp", ScoreCriteria.DUMMY, new StringTextComponent("hp"), ScoreCriteria.RenderType.INTEGER);
+						_so = _sc.addObjective("def", ScoreCriteria.DUMMY, new StringTextComponent("def"), ScoreCriteria.RenderType.INTEGER);
 					}
 					Score _scr = _sc.getOrCreateScore(((PlayerEntity) _ent).getScoreboardName(), _so);
 					_scr.setScorePoints((int) ((new Object() {
@@ -155,9 +155,9 @@ public class BootgreenProcedure extends VortexmodModElements.ModElement {
 				Entity _ent = entity;
 				if (_ent instanceof PlayerEntity) {
 					Scoreboard _sc = ((PlayerEntity) _ent).getWorldScoreboard();
-					ScoreObjective _so = _sc.getObjective("hp");
+					ScoreObjective _so = _sc.getObjective("mp");
 					if (_so == null) {
-						_so = _sc.addObjective("hp", ScoreCriteria.DUMMY, new StringTextComponent("hp"), ScoreCriteria.RenderType.INTEGER);
+						_so = _sc.addObjective("mp", ScoreCriteria.DUMMY, new StringTextComponent("mp"), ScoreCriteria.RenderType.INTEGER);
 					}
 					Score _scr = _sc.getOrCreateScore(((PlayerEntity) _ent).getScoreboardName(), _so);
 					_scr.setScorePoints((int) ((new Object() {
@@ -188,7 +188,7 @@ public class BootgreenProcedure extends VortexmodModElements.ModElement {
 				}
 				return 0;
 			}
-		}.getScore("sharp")) == (new Object() {
+		}.getScore("str")) == (new Object() {
 			public int getScore(String score) {
 				if (entity instanceof PlayerEntity) {
 					Scoreboard _sc = ((PlayerEntity) entity).getWorldScoreboard();
@@ -200,14 +200,14 @@ public class BootgreenProcedure extends VortexmodModElements.ModElement {
 				}
 				return 0;
 			}
-		}.getScore("sharp")))) {
+		}.getScore("str")))) {
 			{
 				Entity _ent = entity;
 				if (_ent instanceof PlayerEntity) {
 					Scoreboard _sc = ((PlayerEntity) _ent).getWorldScoreboard();
-					ScoreObjective _so = _sc.getObjective("hp");
+					ScoreObjective _so = _sc.getObjective("str");
 					if (_so == null) {
-						_so = _sc.addObjective("hp", ScoreCriteria.DUMMY, new StringTextComponent("hp"), ScoreCriteria.RenderType.INTEGER);
+						_so = _sc.addObjective("str", ScoreCriteria.DUMMY, new StringTextComponent("str"), ScoreCriteria.RenderType.INTEGER);
 					}
 					Score _scr = _sc.getOrCreateScore(((PlayerEntity) _ent).getScoreboardName(), _so);
 					_scr.setScorePoints((int) ((new Object() {
@@ -222,7 +222,7 @@ public class BootgreenProcedure extends VortexmodModElements.ModElement {
 							}
 							return 0;
 						}
-					}.getScore("sharp")) + 10));
+					}.getScore("str")) + 10));
 				}
 			}
 		}
