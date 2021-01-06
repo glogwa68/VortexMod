@@ -2,23 +2,6 @@
   "id_map": {},
   "mod_elements": [
     {
-      "name": "Mod1",
-      "type": "procedure",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mod_1",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "Horsecraft",
       "type": "recipe",
       "sortid": 2,
@@ -35,6 +18,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "crafted_horse_armor"
+    },
+    {
+      "name": "Netherite",
+      "type": "biome",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "netherite"
     }
   ],
   "variable_elements": [],
@@ -42,7 +34,8 @@
   "language_map": {
     "en_us": {
       "advancements.crafted_horse_armor.title": "Crafted Horse Armor",
-      "advancements.crafted_horse_armor.descr": "you have Crafted Horse Armor !! :D"
+      "advancements.crafted_horse_armor.descr": "you have Crafted Horse Armor !! :D",
+      "biome.vortexmod.netherite": "Netherite"
     }
   },
   "workspaceSettings": {
