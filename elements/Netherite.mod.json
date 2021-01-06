@@ -4,7 +4,7 @@
   "definition": {
     "name": "Netherite",
     "groundBlock": {
-      "value": "Blocks.ANCIENT_DEBRIS"
+      "value": "Blocks.GRASS_PATH"
     },
     "undergroundBlock": {
       "value": "Blocks.QUARTZ_BLOCK#0"
@@ -20,7 +20,9 @@
     "biomeType": "WARM",
     "spawnBiome": true,
     "biomeWeight": 10,
-    "biomeDictionaryTypes": [],
+    "biomeDictionaryTypes": [
+      "NETHER"
+    ],
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 4,
