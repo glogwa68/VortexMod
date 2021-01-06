@@ -4,23 +4,25 @@
   "definition": {
     "name": "Netherite",
     "groundBlock": {
-      "value": "Blocks.DIRT#2"
+      "value": "Blocks.CRIMSON_NYLIUM"
     },
     "undergroundBlock": {
-      "value": "Blocks.ANCIENT_DEBRIS"
+      "value": "Blocks.DIRT#0"
     },
-    "biomeCategory": "NONE",
+    "biomeCategory": "NETHER",
     "parent": {
-      "value": "No parent"
+      "value": "nether"
     },
     "rainingPossibility": 0.5,
     "temperature": 0.5,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "biomeType": "WARM",
-    "spawnBiome": true,
+    "spawnBiome": false,
     "biomeWeight": 10,
-    "biomeDictionaryTypes": [],
+    "biomeDictionaryTypes": [
+      "NETHER"
+    ],
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 4,

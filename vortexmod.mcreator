@@ -27,12 +27,22 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "netherite"
+    },
+    {
+      "name": "AnciantDebrit",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "anciant_debrit"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.vortexmod.anciant_debrit": "Anciant Debrit",
       "advancements.crafted_horse_armor.title": "Crafted Horse Armor",
       "advancements.crafted_horse_armor.descr": "you have Crafted Horse Armor !! :D",
       "biome.vortexmod.netherite": "Netherite"
