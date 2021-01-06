@@ -19,7 +19,7 @@
     "heightVariation": 0.2,
     "biomeType": "WARM",
     "spawnBiome": false,
-    "biomeWeight": 10,
+    "biomeWeight": 42,
     "biomeDictionaryTypes": [
       "NETHER"
     ],
