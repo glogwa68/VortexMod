@@ -17,7 +17,7 @@
     "temperature": 0.5,
     "baseHeight": 0.1,
     "heightVariation": 0.2,
-    "biomeType": "ICY",
+    "biomeType": "WARM",
     "spawnBiome": true,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [],

@@ -98,7 +98,7 @@ public class NetheriteBiome extends VortexmodModElements.ModElement {
 	}
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		BiomeManager.addBiome(BiomeManager.BiomeType.ICY,
+		BiomeManager.addBiome(BiomeManager.BiomeType.WARM,
 				new BiomeManager.BiomeEntry(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), 10));
 	}
 	private static class CustomLeaveVineTreeDecorator extends LeaveVineTreeDecorator {
