@@ -17,6 +17,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "Horsecraft",
+      "type": "recipe",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "horsecraft"
     }
   ],
   "variable_elements": [],
