@@ -7,7 +7,7 @@
       "value": "Blocks.GRASS_PATH"
     },
     "undergroundBlock": {
-      "value": "Blocks.QUARTZ_BLOCK#0"
+      "value": "Blocks.DIRT#2"
     },
     "biomeCategory": "NONE",
     "parent": {

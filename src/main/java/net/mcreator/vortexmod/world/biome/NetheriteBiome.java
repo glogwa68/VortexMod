@@ -67,7 +67,7 @@ public class NetheriteBiome extends VortexmodModElements.ModElement {
 						.withSkyColor(7972607).withFoliageColor(10387789).withGrassColor(9470285).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.GRASS_PATH.getDefaultState(),
-								Blocks.SMOOTH_QUARTZ.getDefaultState(), Blocks.SMOOTH_QUARTZ.getDefaultState())));
+								Blocks.PODZOL.getDefaultState(), Blocks.PODZOL.getDefaultState())));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
